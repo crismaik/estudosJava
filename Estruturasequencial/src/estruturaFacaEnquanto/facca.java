@@ -48,5 +48,4 @@ public class facca {
 
         sc.close();
     }
-    
 }
