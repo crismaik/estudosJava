@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 import entities1.tirangle;
 
-public class App {
+public class triangulo {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         Scanner sc = new Scanner(System.in);
@@ -22,6 +22,12 @@ public class App {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
+        double areaX = x.area();
+        double areaY = y.area();
+
+        System.out.println(areaX);
+        System.out.println(areaY);
+
         //double p = (x.a + x.b + x.c) / 2;
         //double areaX = Math.sqrt(p * (p-x.a)*(p-x.b)*(p-x.c));
 
@@ -30,20 +36,6 @@ public class App {
 
        // System.out.printf("Triangle X area: %.4f%n" areaX);
        // System.out.printf("Triangle Y area: %.4f%n" areaY);
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
         sc.close();
 
     }
