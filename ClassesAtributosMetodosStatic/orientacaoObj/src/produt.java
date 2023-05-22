@@ -17,6 +17,25 @@ public class produt {
         System.out.println("Quantidades ");
         product.quantity = sc.nextInt();
         System.out.println(product);
+        System.out.println();
+
+        System.out.println("Quantos produtos quer adcionar ??");
+        int quantity = sc.nextInt();
+        product.addProducts(quantity);// aqui ele adiciona o valor da variavel acima 
+        // e salva no objeto criado.
+        // ele adcina as unidades junto com a variavel quantity.
+
+        System.out.println();
+        System.out.println("Update data:  "+product);
+        System.out.println();
+        System.out.println("Entre com quantos produtos vendidos: ");
+        quantity = sc.nextInt();
+        product.removeProducts(quantity);
+        System.out.println();
+        System.out.println("Update data:  "+product);
+
+
+
 
 
         sc.close();
